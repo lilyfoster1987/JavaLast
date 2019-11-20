@@ -30,7 +30,7 @@ public class SesliVeSessizHarfSayma {
 		
 		
 	}
-		System.out.println("Sesle harf sayisi"+sayac);
+		System.out.println("Sesli harf sayisi"+sayac);
 		System.out.println("sessiz harf sayisi" + sayac2);
 		System.out.println(word);
 }

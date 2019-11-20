@@ -12,18 +12,28 @@ public class SumOfDigit {
 		
 		
 		Scanner scan=new Scanner(System.in);
-		System.out.println("enter a number");
+		System.out.println("Please enter a number");
 		int num=scan.nextInt();
-		int digit=0;
+		
 		int sum=0;
-		for (int i = 0; i < num; i++) {
-			
-			digit=num%10;
-			sum=sum+digit;
-			num=num/10;
-			
+		
+//		for (int i = 0; i <= num+1; i++) {
+//			sum+=num%10;
+//			num/=10;
+//		}
+		int sayac=0;
+		while (num>0) {
+			sum+=num%10;
+			num/=10;
+			sayac++;
 		}
+		
+		
 		System.out.println(sum);
-	}
+		System.out.println(sayac);
+		scan.close();
+		}
+		
+	
 	
 }

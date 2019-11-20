@@ -15,7 +15,11 @@ public class Contains {
 			System.out.println("false");
 		}
 				
-		
+		int i = 5;
+		while(++i < 10)
+		{
+			System.out.print(i++);
+		}		
 		
 	}
 

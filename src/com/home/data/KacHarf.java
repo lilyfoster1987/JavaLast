@@ -22,56 +22,23 @@ public class KacHarf {
 		int sayac9=0;
 	
 	
-	int b=a.length();
-	for(int i=0; i<=b-1; i++) {
+	int b=a.toLowerCase().length();
+	
+char[] alphabet= {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','u','p','r','s','t','u','z','w','x','v'};
+	
+	
 		
-		if(a.charAt(i)=='a' || a.charAt(i)=='A') {
+	for(int i=0; i<=b-1; i++) {
+		for(int j=0; j<alphabet.length; j++) {
+		if(a.charAt(i)==alphabet[j] ) {
 			System.out.println("a harfi "+(i+1)+". siradadir");
 			sayac++;
-			System.out.println(sayac+"tane a harfi vardir");
+			System.out.println(sayac+"tane a.charAt(i) harfi vardir");
 		}
 		
-		else if(a.charAt(i)=='b' || a.charAt(i)=='B') {
-			System.out.println("B harfi "+(i+1)+". siradadir");
-			sayac1++;
-		}
-		else if(a.charAt(i)=='c' || a.charAt(i)=='C') {
-			System.out.println("C harfi "+(i+1)+". siradadir");
-			sayac2++;
-		}
-		else if(a.charAt(i)=='d' || a.charAt(i)=='D') {
-			System.out.println("d harfi "+(i+1)+". siradadir");
-			sayac3++;
-		}else if(a.charAt(i)=='e' || a.charAt(i)=='E') {
-			System.out.println("E harfi "+(i+1)+". siradadir");
-			sayac4++;
-		}else if(a.charAt(i)=='f' || a.charAt(i)=='F') {
-			System.out.println("F harfi "+(i+1)+". siradadir");
-			sayac5++;
-		}else if(a.charAt(i)=='g' || a.charAt(i)=='G') {
-			System.out.println("G harfi "+(i+1)+". siradadir");
-			sayac6++;
-		}else if(a.charAt(i)=='h' && a.charAt(i)=='H') {
-			System.out.println("H harfi "+(i+1)+". siradadir");
-			sayac7++;
-		}
-		else if(a.charAt(i)=='i' && a.charAt(i)=='I') {
-			System.out.println("I harfi "+(i+1)+". siradadir");
-			sayac8++;
-		}
-	
-	}
-	
-	System.out.println(sayac+"tane a harfi vardir");
-	System.out.println(sayac1+"tane B harfi vardir");
-	System.out.println(sayac2+"tane C harfi vardir");
-	System.out.println(sayac3+"tane D harfi vardir");
-	System.out.println(sayac4+"tane E harfi vardir");
-	System.out.println(sayac5+"tane F harfi vardir");
-	System.out.println(sayac6+"tane G harfi vardir");
-	System.out.println(sayac7+"tane H harfi vardir");
-	System.out.println(sayac8+"tane I harfi vardir");
 		
+	
+	
 
 
 	}

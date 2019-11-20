@@ -12,20 +12,17 @@ public class BasamakSayisi {
 		System.out.println("enter a number");
 		
 		int number=scan.nextInt();
-		int i=0;
+		int sayac=0;
 		
 		while(number!=0) {
+					
+			number=number/10;
 			
-			
-			
-			
-			number/=10;
-			
-			i++;
+			sayac++;
 			
 		}
 		
-		System.out.println("number is "+i+" basamakli");
+		System.out.println("number is "+sayac+" basamakli");
 	
 		
 		

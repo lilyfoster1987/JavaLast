@@ -24,9 +24,11 @@ Example output:
 		
 		int first=num%10;
 		int last=0;
+		int sum=0;
 		for(int i =0; i<=num; i++) {
 			
 			last=num%10;
+			sum=sum+last;
 			num=num/10;
 			
 		}
