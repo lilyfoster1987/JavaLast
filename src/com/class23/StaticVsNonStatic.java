@@ -12,7 +12,8 @@ public class StaticVsNonStatic {
 	}
 	//sataic method
 	static void getInfo1() {
-		
+		//we can only static variables
+	//	System.out.println("my name is "+name);name is non static variable
 		System.out.println("I am attending classes at "+school);
 	}
 	
@@ -20,7 +21,9 @@ public class StaticVsNonStatic {
 		StaticVsNonStatic obj=new StaticVsNonStatic();
 		obj.getinfo();
 		getInfo1();
-		
+		System.out.println(school);
+		System.out.println(StaticVsNonStatic.school);
+		System.out.println(obj.school);
 
 	}
 
