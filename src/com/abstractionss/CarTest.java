@@ -8,6 +8,9 @@ Sedan car=new Sedan();
 car.carPrice=80000;
 car.length=20;
 System.out.println(car.calculateSalePrice());
+System.out.println(car.calculateSalePrice());
+System.out.println(car.calculateSalePrice());
+
 System.out.println("********************");
 Truck truck=new Truck();
 truck.carPrice=20000;

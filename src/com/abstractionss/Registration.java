@@ -27,20 +27,34 @@ public void  setEmail( String  email) {
 
 public void  setUserName(String userName) {
 	this.userName=userName;
-	if(!userName.isEmpty() && userName.length()>=6) {
-		this.userName=userName;
+	if(!userName.isEmpty()) {
+		if(userName.length()>=6) {
+			this.userName=userName;
+		}else {
+			System.out.println("the username can not be smaller than 6 char");
+		}
+		
 	}else {
-		System.out.println("username can not be empty and smaller than 6 characters..");
+		System.out.println("username can not be empty ");
 	}
 }
 
 public void  setPassword(String password) {
 	
-	if(!password.isEmpty()&&!password.contains(userName)&& password.length()>=6 ) {
+	if(!password.isEmpty()  ) {
+		if(!password.contains(userName)) {
+			if(password.length()>=6) {
+				this.password=password;
+			}else {
+				System.out.println("password cant be smaller than 6");
+			}}
+			else {
+				System.out.println("password can not contain username");
+			}
+		}
 		
-		this.password=password;
-		}else{
-		System.out.println("Password can not be empty, smaller than 6 characters and can not contain username ");
+			else{
+		System.out.println("Password can not be empty ");
 	}
 }
 public String getEmail() {

@@ -21,13 +21,14 @@ class Sedan extends Car{
 	@Override
 	public double calculateSalePrice() {
 		// TODO Auto-generated method stub
+		double SedanPrice;
 		if(length>20) {
-			carPrice=carPrice-(carPrice*0.05);
+			SedanPrice=carPrice-(carPrice*0.05);
 		}
 		else {
-			carPrice=carPrice-(carPrice*0.10);
+			SedanPrice=carPrice-(carPrice*0.10);
 		}
-		return carPrice;
+		return SedanPrice;
 	}
 }
 class Truck extends Car{
@@ -36,14 +37,14 @@ class Truck extends Car{
 	
 		@Override
 		public double calculateSalePrice() {
-			// TODO Auto-generated method stub
+			double truckPrice;
 			if(weight>2000) {
-				carPrice=carPrice-(carPrice*0.10);
+				truckPrice=carPrice-(carPrice*0.10);
 			}
 			else {
-				carPrice=carPrice-(carPrice*0.20);
+				truckPrice=carPrice-(carPrice*0.20);
 			}
-			return carPrice;
+			return truckPrice;
 		}
 	
 }
