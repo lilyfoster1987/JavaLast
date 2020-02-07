@@ -1,11 +1,15 @@
 package com.home.data;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.TreeSet;
+
 public class TekrarEdenKelime {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str="Where are you from? Are you from Turkey?";
-		String[] temp=str.toLowerCase().replaceAll("[^a-z ]", "").split(" ");
+		String str="Today is rewiev day and today topic is exception";
+		String[] temp=str.toLowerCase().split(" ");
 		
 		for (String t:temp) {
 			System.out.print(t+" ");
@@ -28,6 +32,7 @@ public class TekrarEdenKelime {
 			}
 		}
 		
+		
 		System.out.println(str1);
 		
 		String[] temp1=str1.split(" ");
@@ -44,6 +49,9 @@ public class TekrarEdenKelime {
 			
 			System.out.println(temp1[i] +" is repeated " + count + " times.");
 		}
+		List<String> list = Arrays.asList(temp1);  
+		TreeSet<String>set=new TreeSet<>(list);
+		System.out.println(set);
 		
 	}
 

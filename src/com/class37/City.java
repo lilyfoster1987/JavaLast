@@ -14,8 +14,7 @@ public static void main(String[] args) {
 	city.put("Brussels",4);
 	city.put("Los Angelas",5);
 	city.put("Dallas",6);
-
-	Set<String> set=city.keySet();
+    Set<String> set=city.keySet();
 	Iterator<String>it=set.iterator();
 	while(it.hasNext()) {
 		String key=it.next();

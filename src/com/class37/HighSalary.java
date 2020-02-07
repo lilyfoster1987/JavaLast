@@ -21,12 +21,10 @@ for(Integer i:sal) {
 	}
 	
 }
-
-	
 	Set<String> key=employee.keySet();
 	for(String keys:key) {
 		if(employee.get(keys)==max) {
-			System.out.println(keys+":"+max);
+			System.out.println(keys+"=$"+max);
 		}
 	}
 	}

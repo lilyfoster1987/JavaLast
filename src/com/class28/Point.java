@@ -10,6 +10,6 @@ public class Point {
 
 	     }
 	public static void main(String args[])  {
-	         Point p = new Point();
+	         Point p = new Point(1,2);
 	       }
 }
